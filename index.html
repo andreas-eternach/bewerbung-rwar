@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schnellbewerbung – Physiotherapeut/in</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2b7a78;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #3aa394;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2b7a78;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Schnellbewerbung – Physiotherapeut/in</h2>
+    <form action="mailto:DEINEEMAIL@domain.de" method="POST" enctype="text/plain">
+      
+      <label for="name">Vor- und Nachname*</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="phone">Telefonnummer*</label>
+      <input type="tel" id="phone" name="Telefonnummer" required>
+
+      <label for="email">E-Mail (optional)</label>
+      <input type="email" id="email" name="Email">
+
+      <label for="abschluss">Hast du eine abgeschlossene Ausbildung?</label>
+      <select id="abschluss" name="Ausbildung">
+        <option>Ja</option>
+        <option>Noch in Ausbildung</option>
+        <option>Nein</option>
+      </select>
+
+      <label for="erfahrung">Berufserfahrung</label>
+      <select id="erfahrung" name="Erfahrung">
+        <option>Keine</option>
+        <option>1–2 Jahre</option>
+        <option>3–5 Jahre</option>
+        <option>5+ Jahre</option>
+      </select>
+
+      <label for="start">Startdatum (ab wann verfügbar?)</label>
+      <input type="text" id="start" name="Startdatum">
+
+      <label for="fortbildung">Spezielle Fortbildungen?</label>
+      <input type="text" id="fortbildung" name="Fortbildungen">
+
+      <label for="motivation">Warum möchtest du bei uns arbeiten?</label>
+      <textarea id="motivation" name="Motivation" rows="3"></textarea>
+
+      <label for="nachricht">Noch etwas, das du sagen möchtest?</label>
+      <textarea id="nachricht" name="Nachricht" rows="3"></textarea>
+
+      <button type="submit">Jetzt bewerben</button>
+
+      <p class="note">📞 Wir melden uns in der Regel innerhalb von 24 Stunden bei dir!</p>
+    </form>
+  </div>
+
+</body>
+</html>
